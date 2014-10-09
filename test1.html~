@@ -6,8 +6,7 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="/jquery/test1.js"></script>
 	</head>
-	<body> 
-		<h2>There are <script>image_count;</script> images on this page</h2>			
+	<body>
 		<h2>Click on the images to make them fade out</h2>
 		<br />
 		<h3>Click this line of text to make the images fade in</h3>

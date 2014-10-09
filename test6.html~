@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Testing the length() function</title>
+</head>
+<body>
+
+<h2>Click the button below to find out how many paragraph elements there are</h2>
+
+<p>First paragraph</p>
+<p>Second paragraph</p>
+<p>Third paragraph</p>
+
+<button id="get-length">Get length</button>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+// please externalize this code to an external .js file
+$(document).ready(function() {
+
+  // same as next
+  $('#get-length').click(function() {
+    alert('Length = ' + $('p').length);
+  });
+  
+});
+</script>
+</body>
+</html>

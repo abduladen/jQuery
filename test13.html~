@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>The find() and children() functions</title>
+</head>
+<body>
+
+<h2>In the example below, I use the children() and find() functions.</h2>
+
+<ul id="ul-root">
+  <li>reptiles</li>
+  <li>mammals
+    <ul>
+      <li>dogs</li>
+      <li class="special">zebras</li>
+      <li>lions</li>
+      <li>humans</li>
+    </ul>
+  </li>
+  <li class="special">fish</li>
+  <li>birds</li>
+</ul>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/scripts/test13.js"></script>
+</body>
+</html>

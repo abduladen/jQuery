@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>The data() function: storing data</title>
+</head>
+<body>
+  
+<button id="store">Click this button to store some data in the paragraph
+   below</button><br/>
+
+<button id="show-data">Show the data in the paragraph 
+  below</button>
+  
+<p id="store-data">If you look in Chrome developer tools or Firebug, you 
+  won't see any data that is stored related to this element after storing it.</p>
+
+<button id="show-empty">Click here to show that the next paragraph 
+  does not contain the data</button>
+
+<p id="empty-data">To demonstrate that the data belongs 
+  to the other paragraph, this paragraph is left without any data.</p>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+// In the script below I'm testing the jQuery data() function once again.  This time
+// I'm storing data in hidden attributes.  The storage occurs outside the document rather
+// than in the element itself.
+$(document).ready(function() {
+
+
+  $('#store').click(function() {
+     $('#store-data').data('attributeName', 'some data to be stored');   
+  });
+
+  $('#show-data').click(function() {
+    alert('The data is: ' + $('#store-data').data('attributeName'));    
+  });
+  
+  $('#show-empty').click(function() {
+    alert('The data is: ' + $('#empty-data').data('attributeName'));    
+  });
+});
+</script>
+</body>
+</html>

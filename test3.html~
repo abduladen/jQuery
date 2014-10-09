@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>The each() function</title>
+</head>
+<body>
+
+<h2>I use the each() function to prepend a letter before each paragraph below</h2>
+
+<p>First paragraph</p>
+<p>Second paragraph</p>
+<p>Third paragraph</p>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/scripts/test3.js"></script>
+</body>
+</html>

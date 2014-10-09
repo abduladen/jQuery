@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Combining two element sets</title> 
+</head>
+<body>
+
+<div>This text should be normal.</div>
+
+<p>This text should become red</p>
+
+<span>This text should become red</span>
+
+<div>This text should be normal.</div>
+
+<p>This text should become red</p>
+
+<span>This text should become red</span>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+// I demonstrate the use of adding multiple selections together with the add() function.  So, the jquery statement
+// below will select all paragraph tags, and all span tags on the page and apply a css property to them.
+
+$(document).ready(function() {
+
+  $('p').add('span').css('background-color', 'red');
+
+});
+</script>
+</body>
+</html>

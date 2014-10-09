@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Using data() for HTML5 data- attributes</title>
+</head>
+<body>
+  
+<p data-pattribute="This is the text hidden inside the attribute" 
+id="test-data">If you press the button below, you can reveal 
+the text hidden as an attribute inside the paragraph 
+element as an HTML5 data attribute.</p>
+
+<button>Get data attribute</button>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+// In this script I retrieve the data stored inside a paragraph elements
+// attribute by using the jQuery data() function.  In order to retrieve it
+// the attribute name must begin with data-
+$(document).ready(function() {
+
+  $('button').click(function() {
+    alert('The hidden data is: ' + $('#test-data').data('pattribute'));   
+  });
+  
+});
+</script>
+</body>
+</html>
